@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pass</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="time">9:41</div>
+            <div class="icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Transport Tabs -->
+        <div class="transport-tabs">
+            <div class="tab active"><i class="fa-solid fa-bus"></i> Bus</div>
+            <div class="tab"><i class="fa-solid fa-train"></i> Train</div>
+            <div class="tab"><i class="fa-solid fa-train-subway"></i> Metro</div>
+        </div>
+
+        <!-- Main Gold Card -->
+        <div class="pass-card">
+            <!-- Background faint text (MONTHLY PASS) -->
+            <div class="card-bg-patterns">
+                <div class="pattern-circle top-right">
+                    <svg class="circular-text" viewBox="0 0 100 100">
+                        <path d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" id="circle1" fill="none" />
+                        <text>
+                            <textPath href="#circle1">MONTHLY PASS MONTHLY PASS </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="card-header">
+                <div class="mtc-logo-left">
+                    <div class="mtc-circle">MTC</div>
+                </div>
+                <div class="header-text">
+                    <div class="pass-no">PASS NO 622631</div>
+                    <div class="tamil-text">விருப்பம் போல் பயணம் செய்யும்</div>
+                    <div class="tamil-text-small">மாதாந்திர சலுகைப் பயணச்சீட்டு</div>
+                </div>
+            </div>
+
+            <!-- Profile Box -->
+            <div class="profile-box">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                <div class="amount">₹1000</div>
+                <div class="dotted-line"></div>
+                <div class="valid-till-label">VALID TILL</div>
+                <div class="valid-date">1/6/2026</div> <!-- User Requested Date -->
+            </div>
+
+            <!-- Bottom of Card -->
+            <div class="card-footer">
+                <div class="time-box">
+                    <div id="current-date">06'MAR</div>
+                    <div id="current-time">17:00:00</div>
+                </div>
+
+                <div class="seal-container">
+                    <div class="signature"></div>
+                    <div class="gold-seal">MTC</div>
+                </div>
+
+                <div class="qr-box">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Pass622631" alt="QR Code">
+                </div>
+            </div>
+
+            <div class="terms-text"><u>Terms & Conditions</u></div>
+        </div>
+
+        <!-- Bottom Nav -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-align-left"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item active">
+                <i class="fa-solid fa-bus"></i>
+                <span>Passes</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-circle-dot"></i>
+                <span>Live</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-ticket"></i>
+                <span>Ticket</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
